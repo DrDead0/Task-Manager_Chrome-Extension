@@ -1,0 +1,68 @@
+/* General Styles */
+body {
+    font-family: sans-serif;
+    margin: 10px;
+    min-width: 300px; /* Ensure minimum width for content */
+  }
+  
+  h2 {
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  /* Task List */
+  #taskList {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #taskList li {
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    display: flex; /* Align content horizontally */
+    justify-content: space-between; /* Space between task and button */
+    align-items: center; /* Vertically center content */
+  }
+  
+  #taskList li.completed {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  /* Add Task Form */
+  input[type="text"],
+  input[type="datetime-local"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 400px) {
+    #taskList li {
+      flex-direction: column; /* Stack vertically on smaller screens */
+      align-items: flex-start;
+    }
+  
+    #taskList li button {
+      margin-top: 5px;
+    }
+  }
+  
