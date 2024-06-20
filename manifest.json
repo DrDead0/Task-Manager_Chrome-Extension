@@ -3,13 +3,13 @@
     "name": "Task Manager",
     "description": "Manage your tasks right in your browser!",
     "version": "1.0",
-    "permissions": ["storage", "notifications", "alarms"],  
+    "permissions": ["storage", "notifications", "alarms"],
     "action": {
       "default_popup": "options.html"
     },
     "background": {
       "service_worker": "background.js"
     },
-    "options_page": "options.html" 
+    "options_page": "options.html"
   }
   
