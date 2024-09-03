@@ -25,10 +25,10 @@
     * Added an animation effect to the toggle switch for a more engaging user experience.
 
 ### **Screenshots**
-![Main Page ](https://github.com/DrDead0/Task-Manager_Chrome-Extension/blob/main/images/Normal%20(llightmode).png)
-![Dark Mode ](https://github.com/DrDead0/Task-Manager_Chrome-Extension/blob/main/images/Darkmode.png)
-![Task Page ](https://github.com/DrDead0/Task-Manager_Chrome-Extension/blob/main/images/incomplete%20v3.0%20.png)
-![Task After Completed ](https://github.com/DrDead0/Task-Manager_Chrome-Extension/blob/main/images/complete%20Task%20v3.0.png)
+![Main Page ](https://github.com/DrDead0/Task-Manager_Chrome-Extension/blob/main/images/Normal%20(llightmode).png)<br>
+![Dark Mode ](https://github.com/DrDead0/Task-Manager_Chrome-Extension/blob/main/images/Darkmode.png)<br>
+![Task Page ](https://github.com/DrDead0/Task-Manager_Chrome-Extension/blob/main/images/incomplete%20v3.0%20.png)<br>
+![Task After Completed ](https://github.com/DrDead0/Task-Manager_Chrome-Extension/blob/main/images/complete%20Task%20v3.0.png)<br>
 
 
 
