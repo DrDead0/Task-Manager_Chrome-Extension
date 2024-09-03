@@ -16,6 +16,8 @@ Effortlessly manage your daily tasks directly within your browser. This intuitiv
 ![Popup with task](https://github.com/DrDead0/Task-Manager_Chrome-Extension/blob/main/images/incomplete%20.png)<br>
 ![Task After Completion](https://github.com/DrDead0/Task-Manager_Chrome-Extension/blob/main/images/complete%20Task.png)<br>
 
+![Newly Added Dark Mode](https://github.com/DrDead0/Task-Manager_Chrome-Extension/blob/main/images/Main%20Popup.png)<br>
+
 ## Installation 📥
 1. **Clone**: Clone this repository to your local machine.
    
