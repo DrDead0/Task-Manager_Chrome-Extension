@@ -1,21 +1,19 @@
 {
-    "manifest_version": 3,
-    "name": "Task Manager",
-    "description": "Manage your tasks right in your browser!",
-    "version": "1.0",
-    "permissions": ["storage", "notifications", "alarms"],
-    "action": {
-      "default_popup": "options.html"
-    },
-    "background": {
-      "service_worker": "background.js"
-    },
-    "options_page": "options.html",
-    "web_accessible_resources": [
-      {
-        "resources": ["icon.png"], 
-        "matches": ["<all_urls>"]
-      }
-    ]
+  "manifest_version": 3,
+  "name": "Task Manager",
+  "version": "2.8",
+  "description": "A task manager extension with extra Features and UI Changes.",
+  "permissions": ["storage", "alarms", "notifications"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "options.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
   }
-  
+}
