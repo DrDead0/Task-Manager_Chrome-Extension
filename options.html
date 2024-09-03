@@ -1,20 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Task Manager</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="popupTitle">Task Manager</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h2>Task List</h2>
-  <ul id="taskList"></ul>
-
-  <h2>Add Task</h2>
-  <input type="text" id="taskTitle" placeholder="Task Title">
-  <input type="datetime-local" id="taskDate">
-  <button id="addTask">Add</button>
-  <button id="clearCompleted" style="display: none;">Clear Tasks</button>
-
-  <script src="popup.js"></script> 
+    <div class="container">
+        <div class="theme-toggle">
+            <div class="toggle-container">
+                <div id="toggle" class="toggle"></div>
+                <span class="emoji light-mode">🌞</span>
+                <span class="emoji dark-mode">🌙</span>
+            </div>
+        </div>
+        <h1 id="extensionTitle">Task Manager</h1>
+        <div class="task-form">
+            <input type="text" id="taskTitle" placeholder="Enter task title">
+            <input type="date" id="taskDate">
+            <button id="addTask">Add Task</button>
+        </div>
+        <ul id="taskList"></ul>
+        <button id="clearCompleted" style="display: none;">Clear Completed Tasks</button>
+    </div>
+    <script src="popup.js"></script>
 </body>
 </html>
-
