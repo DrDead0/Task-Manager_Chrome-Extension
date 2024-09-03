@@ -28,32 +28,33 @@ body {
   position: relative;
   width: 60px;
   height: 30px;
+  background-color: var(--toggle-bg);
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .toggle {
-  width: 30px;
-  height: 30px;
-  background-color: var(--toggle-bg);
-  border-radius: 15px;
+  width: 28px;
+  height: 28px;
+  background-color: white;
+  border-radius: 50%;
   position: absolute;
-  top: 0;
-  transition: transform 0.3s;
-}
-
-.emoji {
-  font-size: 22px;
-  position: absolute;
-  top: 0;
-  z-index: 1;
-  cursor: pointer;
+  top: 1px;
+  left: 1px;
+  transition: transform 0.3s ease;
 }
 
 .light-mode {
-  left: 0;
+  left: 5px;
+  z-index: 1;
+  font-size: 18px;
 }
 
 .dark-mode {
-  right: 0;
+  right: 5px;
+  z-index: 1;
+  font-size: 18px;
 }
 
 #extensionTitle {
@@ -174,4 +175,30 @@ body {
   --text-color: #f4f4f4;
   --border-color: #444;
   --toggle-bg: #555;
+}
+
+[data-theme='dark'] #extensionTitle {
+  color: #a29bfe; /* Premium aesthetic color for dark mode */
+}
+
+[data-theme='dark'] #taskList li {
+  border-bottom-color: transparent;
+}
+
+[data-theme='dark'] ::selection {
+  background: red;
+  color: white;
+}
+
+/* Toggle Bar Animation */
+[data-theme='dark'] .toggle {
+  transform: translateX(30px);
+}
+
+.toggle-container {
+  transition: background-color 0.3s ease;
+}
+
+[data-theme='dark'] .toggle-container {
+  background-color: var(--toggle-bg);
 }
