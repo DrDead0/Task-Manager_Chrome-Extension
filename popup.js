@@ -50,6 +50,7 @@ function renderTaskList(tasks) {
     if (tasks.length === 0) {
         let li = document.createElement("li");
         li.textContent = "No tasks yet! Add some to get started.";
+        li.classList.add("no-tasks");
         taskList.appendChild(li);
     } else {
         tasks.forEach(function (task, index) {
@@ -81,11 +82,11 @@ function renderTaskList(tasks) {
 }
 
 // Theme toggle
-const toggle = document.getElementById("toggle");
+const toggle = document.querySelector(".toggle-container");
 
 function setMode(isDark) {
     document.body.setAttribute('data-theme', isDark ? 'dark' : 'light');
-    toggle.style.transform = isDark ? 'translateX(30px)' : 'translateX(0)';
+    toggle.querySelector('.toggle').style.transform = isDark ? 'translateX(30px)' : 'translateX(0)';
     document.getElementById("extensionTitle").textContent = isDark ? 'Task Manager (Dark Mode)' : 'Task Manager';
 }
 
