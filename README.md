@@ -39,12 +39,17 @@
 
 ### **Installation**
 
-There are two ways to install the Task Manager Chrome Extension:
+There are three ways to install the Task Manager Chrome Extension:
 
 **Method 1: Chrome Web Store (Coming Soon!)**
 
 * **(Note: This method is not yet available)**
-* The extension will be available on the Chrome Web Store soon. Search for "Task Manager" and follow the installation instructions.
+* The extension will be available on the Chrome Web Store soon. Search for "Task Manager" and follow the installation instructions.\
+
+**Method 3: Manual Download .CRX file From Release**
+
+1. Download .crx file from Release Section of github.
+2. Drag and drop the .crx file into `chrome://extensions/`
 
 **Method 2: Manual Installation**
 
