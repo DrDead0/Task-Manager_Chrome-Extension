@@ -91,9 +91,6 @@ Contributions are welcome and appreciated! Please feel free to open issues to re
 
 Ashish Chaurasiya (@DrDead0)
 
-### **License**
-
-This project is licensed under the MIT License.
 
 ### **Acknowledgments**
 
