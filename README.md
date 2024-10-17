@@ -74,14 +74,17 @@ Contributions are welcome and appreciated! Please feel free to open issues to re
 
 * Fork the repository.
 * Branch: Create a new branch for your feature:
+  
   ```bash
   git checkout -b feature/your-feature-name
   ```
 * Commit: Make your changes and commit them:
+  
   ```bash
   git commit -am 'Add some feature'
   ```
 * Push: Push your changes to your fork:
+  
   ```bash
   git push origin feature/your-feature-name
   ```
