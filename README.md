@@ -54,6 +54,7 @@ There are three ways to install the Task Manager Chrome Extension:
 **Method 3: Manual Installation**
 
 1. Clone this repository to your local machine:
+   
    ```bash
    https://github.com/DrDead0/Task-Manager_Chrome-Extension.git
    ```
