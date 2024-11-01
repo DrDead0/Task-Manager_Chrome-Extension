@@ -1,8 +1,4 @@
-// popup.js
-
-// Declare tasks globally
 let tasks = [];
-
 // Load tasks on startup
 chrome.storage.local.get("tasks", function (result) {
     tasks = result.tasks || [];
