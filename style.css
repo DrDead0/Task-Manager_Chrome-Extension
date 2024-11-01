@@ -24,7 +24,7 @@ body {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
-  position: relative; /* Added for positioning emojis */
+  position: relative;
 }
 
 /* Toggle Bar */
@@ -32,16 +32,16 @@ body {
   display: flex;
   align-items: center;
   position: relative;
-  width: 60px; /* Decreased width of toggle bar */
-  height: 30px; /* Decreased height */
+  width: 60px;
+  height: 30px;
   background-color: var(--toggle-bg);
-  border-radius: 15px; /* Adjusted for smaller height */
+  border-radius: 15px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .toggle {
-  width: 26px; /* Slightly smaller toggle circle */
+  width: 26px;
   height: 26px;
   background-color: white;
   border-radius: 50%;
@@ -52,7 +52,7 @@ body {
 }
 
 body[data-theme='dark'] .toggle {
-  transform: translateX(30px); /* Adjusted for narrower toggle container */
+  transform: translateX(30px);
 }
 
 .emoji {
@@ -63,11 +63,11 @@ body[data-theme='dark'] .toggle {
 }
 
 .light-mode {
-  left: -25px; /* Positioned emoji outside of toggle bar */
+  left: -25px;
 }
 
 .dark-mode {
-  right: -25px; /* Positioned emoji outside of toggle bar */
+  right: -25px;
 }
 
 #extensionTitle {
@@ -95,7 +95,7 @@ body[data-theme='dark'] .toggle {
 }
 
 .task-form button {
-  background-color: #007bff;
+  background-color: #28a745;
   color: white;
   border: none;
   cursor: pointer;
@@ -103,7 +103,7 @@ body[data-theme='dark'] .toggle {
 }
 
 .task-form button:hover {
-  background-color: #0056b3;
+  background-color: #218838;
   transform: scale(1.02);
 }
 
@@ -124,9 +124,8 @@ body[data-theme='dark'] .toggle {
   border-radius: 8px;
   transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
   background-color: var(--background);
-  /* Removed border */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added subtle shadow for better appearance */
-  margin-bottom: 10px; /* Added spacing between tasks */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
 }
 
 #taskList li:hover {
@@ -271,7 +270,7 @@ body[data-theme='light'] {
 }
 
 .popup-buttons .save-button {
-  background-color: #007bff; /* Blue */
+  background-color: #28a745; /* Green */
   color: white;
 }
 
