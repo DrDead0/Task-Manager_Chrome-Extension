@@ -1,3 +1,5 @@
+/* style.css */
+
 /* General Styles */
 body {
   font-family: 'Arial', sans-serif;
@@ -5,6 +7,7 @@ body {
   padding: 0;
   background-color: var(--background);
   color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .container {
@@ -14,6 +17,7 @@ body {
   border: 1px solid var(--border-color);
   border-radius: 10px;
   background-color: var(--background);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .theme-toggle {
@@ -45,6 +49,10 @@ body {
   transition: transform 0.3s ease;
 }
 
+body[data-theme='dark'] .toggle {
+  transform: translateX(30px);
+}
+
 .light-mode {
   left: 5px;
   z-index: 1;
@@ -62,6 +70,7 @@ body {
   font-size: 20px;
   font-weight: bold;
   margin: 0 0 20px;
+  color: var(--title-color);
 }
 
 .task-form {
@@ -75,11 +84,9 @@ body {
   margin: 5px 0;
   padding: 10px;
   border-radius: 8px;
-  border: 1px solid #ccc;
-}
-
-.task-form input {
+  border: 1px solid var(--border-color);
   font-size: 16px;
+  transition: background-color 0.3s, border-color 0.3s;
 }
 
 .task-form button {
@@ -106,7 +113,7 @@ body {
 
 #taskList li {
   padding: 10px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--border-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -115,12 +122,12 @@ body {
 }
 
 #taskList li:hover {
-  background-color: #f9f9f9;
+  background-color: #f1f1f1;
 }
 
 #taskList li.completed {
   text-decoration: line-through;
-  color: #999;
+  color: red;
 }
 
 #taskList button {
@@ -131,6 +138,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
+  margin-right: 5px;
 }
 
 #taskList button:hover {
@@ -158,47 +166,125 @@ body {
   transform: scale(1.05);
 }
 
-#clearCompleted:active {
-  transform: scale(0.95);
+.no-tasks {
+  color: #666;
+  text-align: center;
+  padding: 10px 0;
 }
 
-/* Dark Mode Styles */
-:root {
-  --background: #f4f4f4;
-  --text-color: #333;
-  --border-color: #ddd;
-  --toggle-bg: #ddd;
-}
-
-[data-theme='dark'] {
-  --background: #333;
-  --text-color: #f4f4f4;
+/* Dark Mode */
+body[data-theme='dark'] {
+  --background: #2e2e2e;
+  --text-color: white;
   --border-color: #444;
   --toggle-bg: #555;
+  --title-color: #ff5555; /* Aesthetic color for dark mode title */
 }
 
-[data-theme='dark'] #extensionTitle {
-  color: #a29bfe; /* Premium aesthetic color for dark mode */
+body[data-theme='light'] {
+  --background: white;
+  --text-color: black;
+  --border-color: #ddd;
+  --toggle-bg: #e5e5e5;
+  --title-color: #333;
 }
 
-[data-theme='dark'] #taskList li {
-  border-bottom-color: transparent;
-}
-
-[data-theme='dark'] ::selection {
-  background: red;
+/* Red selection color */
+::selection {
+  background-color: red;
   color: white;
 }
 
-/* Toggle Bar Animation */
-[data-theme='dark'] .toggle {
-  transform: translateX(30px);
+/* Popup Styles */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
 }
 
-.toggle-container {
-  transition: background-color 0.3s ease;
+.popup.hidden {
+    display: none;
 }
 
-[data-theme='dark'] .toggle-container {
-  background-color: var(--toggle-bg);
+.popup-content {
+    background-color: var(--background);
+    color: var(--text-color);
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.popup-content h2 {
+    margin-top: 0;
+    text-align: center;
+    color: var(--title-color);
+}
+
+.popup-content label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.popup-content input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+.popup-buttons button {
+    padding: 8px 16px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#saveEdit {
+    background-color: #28a745;
+    color: white;
+}
+
+#saveEdit:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+#saveEdit:active {
+    transform: scale(0.95);
+}
+
+#cancelEdit {
+    background-color: #dc3545;
+    color: white;
+}
+
+#cancelEdit:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+#cancelEdit:active {
+    transform: scale(0.95);
 }
