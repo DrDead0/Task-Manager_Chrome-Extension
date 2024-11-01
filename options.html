@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="popupTitle">Task Manager</title>
+    <title>Task Manager</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,6 +23,24 @@
         </div>
         <ul id="taskList"></ul>
         <button id="clearCompleted" style="display: none;">Clear Completed Tasks</button>
+        <div class="coffee-button">
+            <a href="https://www.buymeacoffee.com/dr.dead" target="_blank">☕ Buy Me a Coffee</a>
+        </div>
+
+        <!-- Popup for Editing Task -->
+        <div id="editPopup" class="popup hidden">
+            <div class="popup-content">
+                <h2>Edit Task</h2>
+                <label>Task Title</label>
+                <input type="text" id="editTaskTitle">
+                <label>Due Date</label>
+                <input type="date" id="editTaskDate">
+                <div class="popup-buttons">
+                    <button id="saveEdit">Save</button>
+                    <button id="cancelEdit">Cancel</button>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="popup.js"></script>
 </body>
