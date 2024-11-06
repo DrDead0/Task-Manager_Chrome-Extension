@@ -95,6 +95,3 @@ Ashish Chaurasiya (@DrDead0)
 
 Special thanks to the open-source community for their valuable contributions and support.
 
----
-
-This version removes the toggle point and adds the minor bug fix mention in the "New in This Update" section. Let me know if there’s anything else!
